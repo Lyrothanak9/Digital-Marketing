@@ -1,66 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Media - We Take Care of Your Brand</title>
-    <meta name="title" content="Digital Media - We Take Care of Your Brand">
-    <meta name="description" content="This is a digital marketing agency html template made by codewithsadee">
-    <!-- 
-        fav-icon
-    -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-    <!-- 
-        google font
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Creative Marketing Agency</title>
+  <meta name="title" content="Creative Marketing Agency">
+  <meta name="description" content="A creative marketing agency landing page built with HTML, CSS, and JavaScript.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <!-- 
-        header section start
-     -->
-        <header class="header">
-            <div class="container">
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo.svg" width="205" alt="Digitalmedia home">
-                </a>
-                <nav class="navbar" data-navbar>
-                    <ul class="navbar-list">
-                        <li>
-                            <a href="#" class="navbar-link">How it Works</a>
-                        </li>
 
-                        <li>
-                            <a href="#" class="navbar-link">Our Work</a>
-                        </li>
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
 
-                        <li>
-                            <a href="#" class="navbar-link">Pricing</a>
-                        </li>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="40" alt="Creative Agency Logo">
+      </a>
 
-                        <li>
-                            <a href="#" class="navbar-link">About Us</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" class="btn btn-secondary">
-                    Try it Now
-                </a>
-                <button class="nav-open-btn" aria-label="toggle menu" data-nav-toggle-btn>
-                    <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
-                    <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
-                </button>
-                <div class="overlay" data-overlay>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="#" class="navbar-link">Home</a></li>
+          <li><a href="#" class="navbar-link">Services</a></li>
+          <li><a href="#" class="navbar-link">Our Project</a></li>
+          <li><a href="#" class="navbar-link">About Us</a></li>
+        </ul>
+      </nav>
 
-                </div>
+      <!-- Desktop Contact Button -->
+      <a href="#" class="btn btn-secondary">Let's Talk</a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="nav-open-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+      <!-- Mobile Overlay -->
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+      <section class="section hero" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+            <h1 class="h1 title hero-title">Build Your Brand With Creative Agency</h1>
+            
+            <p class="hero-text">
+              We are a creative agency that helps you to build your brand and grow your business.
+            </p>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" class="input-field" placeholder="Email Address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
             </div>
-        </header>
-    <script src="./assets/js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="835" height="960" alt="Hero Banner" class="w-100">
+
+            <!-- Parallax Shapes -->
+            <img src="./assets/images/hero-icon-1.png" width="100" height="98" alt="shape" class="shape shape-1" data-parallax data-parallax-speed="10">
+            <img src="./assets/images/hero-icon-2.png" width="120" height="120" alt="shape" class="shape shape-2" data-parallax data-parallax-speed="15">
+            <img src="./assets/images/hero-icon-3.png" width="150" height="150" alt="shape" class="shape shape-3" data-parallax data-parallax-speed="25">
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #PROCESS
+      -->
+      <section class="section process" aria-label="process">
+        <div class="container text-center">
+
+          <h2 class="h2 title section-title">How It Works</h2>
+          <p class="section-text">
+            Discover our step-by-step process to transform your ideas into reality.
+          </p>
+
+          <div class="wrapper">
+            <figure class="process-banner">
+              <img src="./assets/images/process-banner.png" width="734" height="854" loading="lazy" alt="Process Banner" class="w-100">
+            </figure>
+
+            <ul class="grid-list">
+              <li class="process-item">
+                <img src="./assets/images/process-icon-1.png" width="60" height="60" loading="lazy" alt="Idea icon" class="item-icon">
+                <h3 class="h3 title item-title">1. Strategy & Research</h3>
+                <p class="item-text">We dive deep into your brand, understanding your goals and your target audience.</p>
+              </li>
+
+              <li class="process-item">
+                <img src="./assets/images/process-icon-2.png" width="60" height="60" loading="lazy" alt="Design icon" class="item-icon">
+                <h3 class="h3 title item-title">2. Design & Prototype</h3>
+                <p class="item-text">Our designers craft intuitive layouts and stunning visuals tailored to your needs.</p>
+              </li>
+
+              <li class="process-item">
+                <img src="./assets/images/process-icon-3.png" width="60" height="60" loading="lazy" alt="Development icon" class="item-icon">
+                <h3 class="h3 title item-title">3. Development</h3>
+                <p class="item-text">We bring designs to life with clean, scalable, and responsive code.</p>
+              </li>
+
+              <li class="process-item">
+                <img src="./assets/images/process-icon-4.png" width="60" height="60" loading="lazy" alt="Launch icon" class="item-icon">
+                <h3 class="h3 title item-title">4. Launch & Support</h3>
+                <p class="item-text">After rigorous testing, we launch your project and provide ongoing support.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #WORKS
+      -->
+      <section class="section works" id="works" aria-label="works">
+        <div class="container text-center">
+
+          <h2 class="h2 title section-title">Our Recent Projects</h2>
+          <p class="section-text">
+            Take a look at some of our proudest accomplishments and creative solutions.
+          </p>
+
+          <ul class="grid-list">
+            <li>
+              <div class="work-card">
+                <figure class="card-banner img-holder" style="--width: 580; --height: 620;">
+                  <img src="./assets/images/work-1.jpg" width="580" height="620" loading="lazy" alt="Product Design" class="img-cover">
+                </figure>
+                <h3 class="h3 title">
+                  <a href="#" class="card-title">Product Design</a>
+                </h3>
+              </div>
+            </li>
+
+            <li>
+              <div class="work-card">
+                <figure class="card-banner img-holder" style="--width: 580; --height: 620;">
+                  <img src="./assets/images/work-2.jpg" width="580" height="620" loading="lazy" alt="App Development" class="img-cover">
+                </figure>
+                <h3 class="h3 title">
+                  <a href="#" class="card-title">App Development</a>
+                </h3>
+              </div>
+            </li>
+
+            <li>
+              <div class="work-card">
+                <figure class="card-banner img-holder" style="--width: 580; --height: 620;">
+                  <img src="./assets/images/work-3.jpg" width="580" height="620" loading="lazy" alt="Virtual Reality" class="img-cover">
+                </figure>
+                <h3 class="h3 title">
+                  <a href="#" class="card-title">Virtual Reality</a>
+                </h3>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn-primary">See All Projects</a>
+
+        </div>
+      </section
